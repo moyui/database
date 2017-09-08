@@ -1,0 +1,1 @@
+insert into viewsm values('M11','ÍõË¬',24);
