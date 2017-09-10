@@ -16,6 +16,7 @@ create table 管理员
 	账号密码 varchar(10),
 	年龄 smallint,
 	港口编号 char(6) NOT NULL,
+	登录状态 bit,
 	primary key(员工编号),
 	foreign key(港口编号) references 港口(港口编号)
 );
@@ -30,7 +31,7 @@ create table 泊位
 	foreign key(港口编号) references 港口(港口编号)
 );
 
-create table 船只
+create table 在泊船只
 (
 	船只编号 char(6) NOT NULL,
 	类型 varchar(30),
@@ -48,15 +49,24 @@ create table 船员
 	船只编号 char(6) NOT NULL,
 	通讯权限 bit,
 	primary key(船员编号),
-	foreign key(船只编号) references 船只(船只编号)
+	foreign key(船只编号) references 在泊船只(船只编号)
 );
 
-create table 泊位分配
+create table 入港分配
 (
-	员工编号 char(6) NOT NULL,
+	员工编号 char(6),
 	泊位编号 char(6) NOT NULL,
-	分配时间 date,
+	入港时间 smalldatetime,
 	primary key(泊位编号),
-	foreign key(员工编号) references 管理员(员工编号),
+	foreign key(泊位编号) references 泊位(泊位编号)
+);
+
+
+create table 出港分配
+(
+	员工编号 char(6),
+	泊位编号 char(6) NOT NULL,
+	出港时间 smalldatetime,
+	primary key(泊位编号),
 	foreign key(泊位编号) references 泊位(泊位编号)
 );
