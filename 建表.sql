@@ -52,21 +52,13 @@ create table 船员
 	foreign key(船只编号) references 在泊船只(船只编号)
 );
 
-create table 入港分配
+create table 时刻表
 (
+	表单号 char(6) NOT NULL,
+	船只编号 char(6),
 	员工编号 char(6),
-	泊位编号 char(6) NOT NULL,
-	入港时间 smalldatetime,
-	primary key(泊位编号),
-	foreign key(泊位编号) references 泊位(泊位编号)
-);
-
-
-create table 出港分配
-(
-	员工编号 char(6),
-	泊位编号 char(6) NOT NULL,
-	出港时间 smalldatetime,
-	primary key(泊位编号),
-	foreign key(泊位编号) references 泊位(泊位编号)
+	泊位编号 char(6),
+	入港时间 date,
+	出港时间 date,
+	primary key(表单号)
 );

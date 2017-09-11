@@ -42,11 +42,12 @@ insert into 船员 values('M08','李明',30,'S06','false');
 insert into 船员 values('M09','于谦',32,'S07','true');
 insert into 船员 values('M10','曾诚',36,'S07','false');
 
-insert into 入港分配 values('A01','P04','2017-07-04');
-insert into 入港分配 values('A04','P07','2017-06-20');
-insert into 入港分配 values('A05','P11','2017-06-12');
-insert into 入港分配 values('A02','P01','2017-07-22');
-insert into 入港分配 values('A06','P12','2017-08-01');
-
-insert into 出港分配 values('A01','P01','2017-04-11');
-insert into 出港分配 values('A02','P03','2017-03-20');
+insert into 时刻表 values('001','S01','A02','P01','2017-03-04',NULL);
+insert into 时刻表 values('002','S02','A01','P03','2017-03-11',NULL);
+insert into 时刻表 values('003','S02','A02','P03',NULL,'2017-03-20');
+insert into 时刻表 values('004','S01','A01','P01',NULL,'2017-04-10');
+insert into 时刻表 values('005','S05','A05','P11','2017-06-12',NULL);
+insert into 时刻表 values('006','S04','A04','P07','2017-06-20',NULL);
+insert into 时刻表 values('007','S03','A01','P04','2017-07-04',NULL);
+insert into 时刻表 values('008','S06','A02','P01','2017-07-22',NULL);
+insert into 时刻表 values('009','S07','A06','P12','2017-08-01',NULL);
