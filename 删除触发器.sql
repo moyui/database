@@ -1,1 +1,1 @@
-drop trigger check_update_ship
+drop trigger insert_ship

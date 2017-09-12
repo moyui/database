@@ -1,0 +1,2 @@
+create trigger update_employee
+on π‹¿Ì‘±

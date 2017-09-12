@@ -1,0 +1,1 @@
+delete from ÔÚ²´´¬Ö» where ´¬Ö»±àºÅ = 'S08'

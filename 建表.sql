@@ -54,11 +54,13 @@ create table 船员
 
 create table 时刻表
 (
-	表单号 char(6) NOT NULL,
+	表单号 int NOT NULL identity,
 	船只编号 char(6),
-	员工编号 char(6),
-	泊位编号 char(6),
+	员工编号 char(6) NOT NULL,
+	泊位编号 char(6) NOT NULL,
 	入港时间 date,
 	出港时间 date,
-	primary key(表单号)
+	primary key(表单号),
+	foreign key(员工编号) references 管理员(员工编号),
+	foreign key(泊位编号) references 泊位(泊位编号)
 );
