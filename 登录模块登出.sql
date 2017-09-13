@@ -1,0 +1,1 @@
+update 管理员 set 登录状态 = 'false' from 管理员 where 员工编号 = 'A02'

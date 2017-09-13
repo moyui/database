@@ -1,0 +1,1 @@
+delete from 港口 where 港口编号 = '003'

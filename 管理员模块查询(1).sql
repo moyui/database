@@ -1,0 +1,1 @@
+select 员工编号,姓名 from 管理员 where 登录状态 = 'true'

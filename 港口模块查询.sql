@@ -1,0 +1,1 @@
+select 港口编号,港口名 from 港口 where 小泊位数量 > 3 
