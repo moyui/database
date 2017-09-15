@@ -1,0 +1,1 @@
+select 船员编号,姓名 from 船员 where 年龄 between 30 and 40

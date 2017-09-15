@@ -1,0 +1,1 @@
+delete from ´¬Ô± where ´¬Ô±±àºÅ = 'M11'

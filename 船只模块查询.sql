@@ -1,0 +1,1 @@
+select COUNT(*) as 在泊小型船只数量 from 泊位 where 类型 = '小' and 状态 = 'false'

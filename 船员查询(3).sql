@@ -1,0 +1,1 @@
+insert into ¥¨‘± values('M11','»Œ∫Ω',28,'S07','true')

@@ -1,0 +1,1 @@
+select 类型,count(*) as 数量 from 泊位 where 港口编号 = '002' group by 类型
